@@ -13,5 +13,5 @@ Requesting data from the microservice:
 
 
 Receiving data from the microservice:
-1. The microservice will not return a newly saved line immediately once a change is saved - instead, the new line is stored in a the microservice until the user clicks out of editing mode. By existing, the main program writes 'end' into the communication text file, which the microservice will read and return the saved line to the main program through the same text file.
+1. The microservice will not return a newly saved line immediately once a change is saved - instead, the new line is stored in a the microservice until the user clicks out of editing mode. By exiting, the main program writes 'end' into the communication text file, which the microservice will read and return the saved line to the main program through the same text file.
 2. The user can request to see what the most recent saved line to the card is by clicking undo, which will cause the main program to write 'undo' into the text file and wait for the microservice to return the most recent saved line for that card.
